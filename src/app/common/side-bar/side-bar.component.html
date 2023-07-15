@@ -1,0 +1,5 @@
+<div class="card">
+    <ul *ngFor="let menu of data" class="menu-list">
+        <li [routerLink]="menu.route">{{ menu.label }}</li>
+    </ul>
+</div>

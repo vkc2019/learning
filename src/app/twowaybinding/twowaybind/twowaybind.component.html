@@ -1,0 +1,15 @@
+<div class="main-card">
+    <div class="card-header">
+        Two way binding
+    </div>
+    <div class="card-body">
+        <input type="text" [(ngModel)]="message" name="inputText" />
+
+        <p>My Message follows as below</p>
+        <button (click)="message =''">Clear</button>
+        <p> {{ message }} </p>
+    </div>
+    <div class="card-footer">
+        read more: https://angular.io/guide/two-way-binding
+    </div>
+</div>

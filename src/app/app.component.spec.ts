@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'x-event-ui'`, () => {
+  it(`should have as title 'learnings'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('x-event-ui');
+    expect(app.title).toEqual('learnings');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('x-event-ui app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('learnings app is running!');
   });
 });

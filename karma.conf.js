@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/x-event-ui'),
+      dir: require('path').join(__dirname, './coverage/learnings'),
       subdir: '.',
       reporters: [
         { type: 'html' },

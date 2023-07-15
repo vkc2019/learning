@@ -1,0 +1,25 @@
+<div class="card top-nav-container">
+    <div class="top">
+        <div class="logo">
+            <img src="../../../assets/logo.png" alt="logo" />
+        </div>
+        <div class="menu-container">
+            <div class="top-menu-container">
+                <ul *ngFor="let menu of data">
+                    <li class="menu-item" (click)="setSubMenu(menu.id)">{{ menu.label }}</li>
+                </ul>
+            </div>
+            <div *ngIf="subMenuList" class="sub-menu-container">
+                <ul *ngFor="let menu of subMenuList">
+                    <li class="menu-item" (click)="onSubMenuClick(menu.id)">{{ menu.label }}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="account">
+            <button>Logout</button>
+        </div>
+    </div>
+
+
+</div>
